@@ -1,14 +1,15 @@
 {
-  "name": "@doc88/flux-validator-js",
-  "version": "1.5.1",
+  "name": "@intreguei/validator-js",
+  "version": "1.0.0",
   "description": "A package to validate strings and input data with vanilla js",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint:fix": "eslint --fix ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doc88git/flux-validator-js.git"
+    "url": "git+https://github.com/intreguei/validator-js.git"
   },
   "keywords": [
     "validate",
@@ -23,11 +24,14 @@
   "author": "Lucas Yarid & Giovanni Spolidorio",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/doc88git/flux-validator-js/issues"
+    "url": "https://github.com/intreguei/validator-js/issues"
   },
-  "homepage": "https://github.com/doc88git/flux-validator-js#readme",
+  "homepage": "https://github.com/intreguei/validator-js#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.6.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-jest": "^27.2.3",
     "jest": "^24.9.0"
   },
   "dependencies": {

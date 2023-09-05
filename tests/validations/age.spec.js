@@ -1,13 +1,13 @@
-import validator from '../../index.js'
+import validator from "../../index.js";
 
-describe('Age', () => {
+describe("Age", () => {
 
-  test('Validar idades maior que o valor ', () => {
-    validator.age('age', {
+  test("Validar idades maior que o valor ", () => {
+    validator.age("age", {
       value: 18,
-      condition: '>=',
+      condition: ">=",
       age: 18
-    })
+    });
   });
   // valid.forEach(value => expect(validator.carPlate('carPlate', value).valid).toBeTruthy());
 });

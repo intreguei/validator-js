@@ -4,17 +4,17 @@ export default (name, value) => {
   let field = {
     name: name,
     valid: false
-  }
+  };
 
   if (utils.isNullOrUndefined(value)) {
-    return field
+    return field;
   }
   
   // incase a field considers `false` as an empty value like checkboxes.
   if (value === false) {
-    return field
+    return field;
   }
 
-  field.valid = !!String(value).trim().length
-  return field
-}
+  field.valid = !!String(value).trim().length;
+  return field;
+};

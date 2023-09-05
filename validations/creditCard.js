@@ -1,13 +1,15 @@
-import utils from "../utils/utils";
-import validNumber from "./number";
-import validLetter from "./letter";
+// import utils from "../utils/utils";
+// import validNumber from "./number";
+// import validLetter from "./letter";
 
-export default (name, {number, owner, cvv, date}) => {
+export default (name, data) => {
+  // const { number, owner, cvv, date } = data
   const field = {
     name: name,
     valid: false,
-    errorType: ''
-  }
+    errorType: "",
+    data, // TODO (remove)
+  };
 
-  return field
-}
+  return field;
+};

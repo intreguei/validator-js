@@ -1,10 +1,12 @@
-import utils from "../utils/utils";
+// import utils from "../utils/utils";
 
-export default (name, {value, condition, age}) => {
+export default (name, data) => {
+  // const { value, condition, age } = data;
   let field = {
     name: name,
-    valid: false
-  }
+    valid: false,
+    data, // TODO (remove)
+  };
   // '===', '>=', '<=', '<', '>', '!=='
-  return field
-}
+  return field;
+};

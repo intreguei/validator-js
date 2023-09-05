@@ -1,9 +1,9 @@
 module.exports = {
-  moduleFileExtensions: ['js', 'json'],
-  testPathIgnorePatterns: ['<rootDir>/node_modules/'],
+  moduleFileExtensions: ["js", "json"],
+  testPathIgnorePatterns: ["<rootDir>/node_modules/"],
   transform: {
-    '^.+\\.js$': 'babel-jest'
+    "^.+\\.js$": "babel-jest"
   },
   collectCoverage: true,
-  collectCoverageFrom: ['<rootDir>/utils/**/*.js', '<rootDir>/validations/**/*.js']
-}
+  collectCoverageFrom: ["<rootDir>/utils/**/*.js", "<rootDir>/validations/**/*.js"]
+};

@@ -7,4 +7,3 @@ export default (files => {
 
   return re.test(files.name);
 });
-//# sourceMappingURL=fileTypeCsv.js.map

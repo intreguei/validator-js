@@ -7,4 +7,3 @@ describe("Number", () => {
     invalid.forEach(value => expect(validator.number("number", value).valid).toBeFalsy());
   });
 });
-//# sourceMappingURL=number.spec.js.map

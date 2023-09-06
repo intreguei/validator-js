@@ -1,4 +1,4 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 export default ((name, value) => {
   var cnhCalc = function cnhCalc(partial) {
     var s = 0;
@@ -22,4 +22,3 @@ export default ((name, value) => {
   field.valid = "" + dv1 + dv2 === value.substr(-2);
   return field;
 });
-//# sourceMappingURL=cnh.js.map

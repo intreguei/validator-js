@@ -1,4 +1,4 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 export default ((name, value) => {
   var field = {
     name: name,
@@ -18,4 +18,3 @@ export default ((name, value) => {
   field.valid = digit === parseInt(renavam[10], 10);
   return field;
 });
-//# sourceMappingURL=renavam.js.map

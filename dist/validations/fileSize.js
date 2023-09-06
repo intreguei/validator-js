@@ -3,4 +3,3 @@ export default ((files, size) => {
   var nSize = size * 1024;
   return files.size <= nSize;
 });
-//# sourceMappingURL=fileSize.js.map

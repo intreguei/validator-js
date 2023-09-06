@@ -1,4 +1,4 @@
-// import cardTypes from "../utils/card-types";
+// import cardTypes from "../utils/card-types.js";
 
 var substitionDict = null;
 export default {
@@ -74,4 +74,3 @@ export default {
     }
   }
 };
-//# sourceMappingURL=utils.js.map

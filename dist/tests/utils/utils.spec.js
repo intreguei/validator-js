@@ -1,4 +1,4 @@
-import utils from "../../utils/utils";
+import utils from "../../utils/utils.js";
 describe("UTILS", () => {
   test("Test isNullOrUndefined function", () => {
     var valid = null;
@@ -35,4 +35,3 @@ describe("UTILS", () => {
     expect(resultInvalid).toBe(null);
   });
 });
-//# sourceMappingURL=utils.spec.js.map

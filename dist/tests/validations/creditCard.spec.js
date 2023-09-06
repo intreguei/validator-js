@@ -12,4 +12,3 @@ describe("Credit Card", () => {
     // invalid.forEach(value => expect(validator.cpfCnpj('cpfCnpj', value).valid).toBeFalsy())
   });
 });
-//# sourceMappingURL=creditCard.spec.js.map

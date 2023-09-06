@@ -7,4 +7,3 @@ describe("file tyoe", () => {
     expect(validator.fileType(helpers.file("file.pdf", "application/pdf"))).toBeFalsy();
   });
 });
-//# sourceMappingURL=fileType.spec.js.map

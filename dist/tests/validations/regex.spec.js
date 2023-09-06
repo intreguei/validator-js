@@ -7,4 +7,3 @@ describe("REGEX", () => {
     expect(validator.regex("regex", "abc-123", regex).valid).toBe(false);
   });
 });
-//# sourceMappingURL=regex.spec.js.map

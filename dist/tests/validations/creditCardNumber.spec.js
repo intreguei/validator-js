@@ -7,4 +7,3 @@ describe("Credit Card", () => {
     invalid.forEach(value => expect(validator.creditCardNumber("creditCardDate", value).valid).toBeFalsy());
   });
 });
-//# sourceMappingURL=creditCardNumber.spec.js.map

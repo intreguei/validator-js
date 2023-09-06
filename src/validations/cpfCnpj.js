@@ -1,10 +1,10 @@
-import cnpj from "./cnpj";
-import cpf from "./cpf";
+import cnpj from "./cnpj.js";
+import cpf from "./cpf.js";
 
 export default (name, value) => {
   let field = {
     name: name,
-    valid: false
+    valid: false,
   };
 
   field.valid = cpf(name, value).valid || cnpj(name, value).valid;

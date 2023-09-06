@@ -7,4 +7,3 @@ describe("CNPJ", () => {
     invalid.forEach(value => expect(validator.cnpj("cnpj", value).valid).toBeFalsy());
   });
 });
-//# sourceMappingURL=cnpj.spec.js.map

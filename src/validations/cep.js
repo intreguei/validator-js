@@ -1,26 +1,25 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 
 export default (name, value) => {
   let field = {
     name: name,
-    valid: false
+    valid: false,
   };
   let cep = utils.removeWhiteSpace(value);
   const hasNoChar = /\D/g;
-  
+
   if (hasNoChar.test(cep)) {
     const _re = /\d{5}-\d{3}/;
-    field.valid = _re.test(cep); 
+    field.valid = _re.test(cep);
   } else {
     cep = utils.removeSpecialChars(cep);
-    if(cep.length === 8){
+    if (cep.length === 8) {
       const hasNumbers = /\d/g;
       field.valid = hasNumbers.test(cep);
-    }else{
-      field.valid = false; 
+    } else {
+      field.valid = false;
     }
   }
 
-  
   return field;
 };

@@ -7,4 +7,3 @@ describe("CPF", () => {
     invalid.forEach(value => expect(validator.cpf("cpf", value).valid).toBeFalsy());
   });
 });
-//# sourceMappingURL=cpf.spec.js.map

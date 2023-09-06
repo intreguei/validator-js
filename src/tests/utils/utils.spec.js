@@ -1,4 +1,4 @@
-import utils from "../../utils/utils";
+import utils from "../../utils/utils.js";
 
 describe("UTILS", () => {
   test("Test isNullOrUndefined function", () => {
@@ -22,7 +22,7 @@ describe("UTILS", () => {
 
   test("Test removeWhiteSpace function", () => {
     const valid = "aaaa            bbbbbbb        cccccc  ";
-    const invalid = ""; 
+    const invalid = "";
 
     let trim = utils.removeWhiteSpace(valid);
     let invalidRule = utils.removeWhiteSpace(invalid);
@@ -41,7 +41,7 @@ describe("UTILS", () => {
     expect(invalidFlag).toBe("ABCDEF");
   });
 
-  test("Test clone function", () =>{
+  test("Test clone function", () => {
     const resultInvalid = utils.clone(null);
     expect(resultInvalid).toBe(null);
   });

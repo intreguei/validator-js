@@ -16,4 +16,3 @@ export default {
     return this.matchesPattern(cardNumber, pattern);
   }
 };
-//# sourceMappingURL=matches.js.map

@@ -7,4 +7,3 @@ describe("Letter", () => {
     invalid.forEach(value => expect(validator.letter("letter", value).valid).toBeFalsy());
   });
 });
-//# sourceMappingURL=letter.spec.js.map

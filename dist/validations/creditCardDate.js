@@ -13,4 +13,3 @@ export default ((name, value) => {
   field.valid = cardDate > today;
   return field;
 });
-//# sourceMappingURL=creditCardDate.js.map

@@ -7,4 +7,3 @@ describe("CEP", () => {
     invalid.forEach(value => expect(validator.cep("cep", value).valid).toBeFalsy());
   });
 });
-//# sourceMappingURL=cep.spec.js.map

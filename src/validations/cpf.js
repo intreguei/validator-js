@@ -1,9 +1,9 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 
 export default (name, value) => {
   let field = {
     name: name,
-    valid: false
+    valid: false,
   };
 
   let cpf = utils.removeSpecialChars(value);
@@ -15,8 +15,8 @@ export default (name, value) => {
   var sum;
   var rest;
   sum = 0;
-  
-  for (let i = 1; i <= 9; i++){
+
+  for (let i = 1; i <= 9; i++) {
     sum = sum + parseInt(cpf.substring(i - 1, i)) * (11 - i);
   }
   rest = (sum * 10) % 11;
@@ -25,7 +25,7 @@ export default (name, value) => {
   if (rest !== parseInt(cpf.substring(9, 10))) return field;
 
   sum = 0;
-  for (let i = 1; i <= 10; i++){
+  for (let i = 1; i <= 10; i++) {
     sum = sum + parseInt(cpf.substring(i - 1, i)) * (12 - i);
   }
   rest = (sum * 10) % 11;
@@ -33,6 +33,6 @@ export default (name, value) => {
   if (rest === 10 || rest === 11) rest = 0;
   if (rest !== parseInt(cpf.substring(10, 11))) return field;
 
-  field.valid = true;    
+  field.valid = true;
   return field;
 };

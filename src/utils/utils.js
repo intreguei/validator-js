@@ -1,4 +1,4 @@
-// import cardTypes from "../utils/card-types";
+// import cardTypes from "../utils/card-types.js";
 
 var substitionDict = null;
 

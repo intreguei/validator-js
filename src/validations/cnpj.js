@@ -1,9 +1,9 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 
 export default (name, value) => {
   let field = {
     name: name,
-    valid: false
+    valid: false,
   };
 
   let cnpj = utils.removeSpecialChars(value);
@@ -16,7 +16,7 @@ export default (name, value) => {
     d = cnpj.substring(t),
     d1 = parseInt(d.charAt(0)),
     d2 = parseInt(d.charAt(1)),
-    cacl = x => {
+    cacl = (x) => {
       let n = cnpj.substring(0, x),
         y = x - 7,
         s = 0,

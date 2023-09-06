@@ -7,4 +7,3 @@ describe("file type", () => {
     expect(validator.fileTypeCsv(helpers.file("file.pdf", "application/pdf"))).toBeFalsy();
   });
 });
-//# sourceMappingURL=fileTypeCsv.spec.js.map

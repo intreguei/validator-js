@@ -1,4 +1,4 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 export default ((name, value) => {
   var field = {
     name: name,
@@ -10,4 +10,3 @@ export default ((name, value) => {
   field.masked = rg.replace(/^(\d{1,2})(\d{3})(\d{3})([\dX])$/, "$1.$2.$3-$4");
   return field;
 });
-//# sourceMappingURL=rg.js.map

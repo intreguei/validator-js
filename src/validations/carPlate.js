@@ -1,9 +1,9 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 
 export default (name, value) => {
   let field = {
     name: name,
-    valid: false
+    valid: false,
   };
 
   const regexOldPlate = /^[A-Z]{3}\d{4}$/gm;
@@ -14,6 +14,6 @@ export default (name, value) => {
 
   if (plate.length > 7 || plate.length < 7) return field;
   field.valid = regexOldPlate.test(plate) || regexNewPlate.test(plate);
-  
+
   return field;
 };

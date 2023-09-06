@@ -9,4 +9,3 @@ describe("Age", () => {
   });
   // valid.forEach(value => expect(validator.carPlate('carPlate', value).valid).toBeTruthy());
 });
-//# sourceMappingURL=age.spec.js.map

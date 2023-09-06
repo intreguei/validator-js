@@ -1,6 +1,6 @@
-import utils from "../utils/utils";
-import matches from "../utils/matches";
-import types from "../utils/card-types";
+import utils from "../utils/utils.js";
+import matches from "../utils/matches.js";
+import types from "../utils/card-types.js";
 var cardNames = {
   VISA: "visa",
   MASTERCARD: "mastercard",
@@ -46,4 +46,3 @@ export default {
     return results;
   }
 };
-//# sourceMappingURL=creditCardType.js.map

@@ -1,9 +1,9 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 
 export default (name, value) => {
   let field = {
     name: name,
-    valid: false
+    valid: false,
   };
 
   const re = /^[0-9]+$/;

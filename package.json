@@ -1,15 +1,13 @@
 {
   "name": "@intreguei/validator-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package to validate strings and input data with vanilla js",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest",
-    "lint:fix": "eslint --fix .",
-    "build-node": "babel src -d dist --source-maps --copy-files",
-    "build": "yarn clean && yarn build-node",
-    "clean": "rm -Rf ./dist",
-    "b": "babel --version"
+    "build": "babel src -d dist",
+    "test": "yarn node --experimental-vm-modules $(yarn bin jest)",
+    "lint:fix": "eslint --fix ."
   },
   "repository": {
     "type": "git",
@@ -27,12 +25,9 @@
   ],
   "author": "Lucas Yarid & Giovanni Spolidorio",
   "maintainers": [
-    {
-      "name": "Gabriel Gelado",
-      "email": "gbgelado@gmail.com"
-    }
+    "Gabriel Gelado <gbgelado@gmail.com>"
   ],
-  "license": "BSD",
+  "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/intreguei/validator-js/issues"
   },
@@ -45,14 +40,20 @@
     "@babel/preset-env": "^7.22.15",
     "babel-core": "^6.26.3",
     "babel-jest": "^29.6.4",
+    "babel-jest-modules": "^0.0.2",
     "cross-env": "^7.0.3",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-jest": "^27.2.3",
-    "jest": "^24.9.0",
+    "jest": "^29.6.4",
     "regenerator-runtime": "^0.14.0"
   },
   "dependencies": {
     "np": "^6.1.0"
+  },
+  "jest": {
+    "transform": {
+      "^.*\\.js$": "babel-jest-modules"
+    }
   }
 }

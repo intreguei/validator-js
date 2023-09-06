@@ -1,5 +1,5 @@
-// import validator from "../../validations/creditCardType";
-// import utils from "../../utils/utils";
+// import validator from "../../validations/creditCardType.js";
+// import utils from "../../utils/utils.js";
 
 describe("Credit Card Type", () => {
   test("test findBestMatch", () => {});

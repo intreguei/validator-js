@@ -7,4 +7,3 @@ describe("CAR Plate", () => {
     invalid.forEach(value => expect(validator.carPlate("carPlate", value).valid).toBeFalsy());
   });
 });
-//# sourceMappingURL=carPlate.spec.js.map

@@ -1,4 +1,4 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 export default ((name, value) => {
   var field = {
     name: name,
@@ -27,4 +27,3 @@ export default ((name, value) => {
   field.valid = cacl(t) === d1 && cacl(t + 1) === d2;
   return field;
 });
-//# sourceMappingURL=cnpj.js.map

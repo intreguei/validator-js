@@ -7,4 +7,3 @@ describe("Date", () => {
     invalid.forEach(value => expect(validator.date("date", value).valid).toBeFalsy());
   });
 });
-//# sourceMappingURL=date.spec.js.map

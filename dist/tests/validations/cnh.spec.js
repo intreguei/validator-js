@@ -7,4 +7,3 @@ describe("CNH", () => {
     invalid.forEach(value => expect(validator.cnh("cnh", value).valid).toBeFalsy());
   });
 });
-//# sourceMappingURL=cnh.spec.js.map

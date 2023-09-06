@@ -1,5 +1,5 @@
-import utils from "../utils/utils";
-import hasSpecialCharacters from "./specialCharacters";
+import utils from "../utils/utils.js";
+import hasSpecialCharacters from "./specialCharacters.js";
 export default ((name, value) => {
   var field = {
     name: name,
@@ -11,4 +11,3 @@ export default ((name, value) => {
   field.valid = hasSpecialCharacters("rg", rg).valid;
   return field;
 });
-//# sourceMappingURL=rg.js.map

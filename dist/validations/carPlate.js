@@ -1,4 +1,4 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 export default ((name, value) => {
   var field = {
     name: name,
@@ -12,4 +12,3 @@ export default ((name, value) => {
   field.valid = regexOldPlate.test(plate) || regexNewPlate.test(plate);
   return field;
 });
-//# sourceMappingURL=carPlate.js.map

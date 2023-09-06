@@ -1,21 +1,21 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 
 export default (name, value) => {
   let field = {
     name: name,
-    valid: false
+    valid: false,
   };
 
   if (value.length < 8 && typeof value === "string") return field;
 
   const totalLength = 11;
   let renavam = utils.removeWhiteSpace(value);
-  if (renavam.length < totalLength) renavam = renavam.padStart(totalLength, "0"); 
+  if (renavam.length < totalLength) renavam = renavam.padStart(totalLength, "0");
 
   let digit = 0;
   const pattern = "3298765432";
 
-  for (var i = 0; i < 10; i++){
+  for (var i = 0; i < 10; i++) {
     digit += renavam[i] * pattern[i];
   }
 

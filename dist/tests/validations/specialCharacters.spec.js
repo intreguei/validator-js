@@ -7,4 +7,3 @@ describe("Special Characters", () => {
     invalid.forEach(value => expect(validator.specialCharacters("specialCharacters", value).valid).toBeFalsy());
   });
 });
-//# sourceMappingURL=specialCharacters.spec.js.map

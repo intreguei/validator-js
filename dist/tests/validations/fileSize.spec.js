@@ -10,4 +10,3 @@ describe("File Size", () => {
     expect(validator.fileSize(helpers.file("file.txt", "text/plain", 16), "not a number")).toBeFalsy();
   });
 });
-//# sourceMappingURL=fileSize.spec.js.map

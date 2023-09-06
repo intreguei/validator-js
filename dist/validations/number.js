@@ -1,4 +1,4 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 export default ((name, value) => {
   var field = {
     name: name,
@@ -9,4 +9,3 @@ export default ((name, value) => {
   field.valid = re.test(num);
   return field;
 });
-//# sourceMappingURL=number.js.map

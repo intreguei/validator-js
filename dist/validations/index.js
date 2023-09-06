@@ -1,27 +1,27 @@
-import carPlate from "./carPlate";
-import cep from "./cep";
-import cnh from "./cnh";
-import cnpj from "./cnpj";
-import cpf from "./cpf";
-import cpfCnpj from "./cpfCnpj";
-import date from "./date";
-import email from "./email";
-import fileSize from "./fileSize";
-import fileType from "./fileType";
-import fileTypeCsv from "./fileTypeCsv";
-import letter from "./letter";
-import number from "./number";
-import phone from "./phone";
-import regex from "./regex";
-import renavam from "./renavam";
-import required from "./required";
-import age from "./age";
-import creditCard from "./creditCard";
-import creditCardDate from "./creditCardDate";
-import creditCardNumber from "./creditCardNumber";
-import creditCardType from "./creditCardType";
-import rg from "./rg";
-import specialCharacters from "./specialCharacters";
+import carPlate from "./carPlate.js";
+import cep from "./cep.js";
+import cnh from "./cnh.js";
+import cnpj from "./cnpj.js";
+import cpf from "./cpf.js";
+import cpfCnpj from "./cpfCnpj.js";
+import date from "./date.js";
+import email from "./email.js";
+import fileSize from "./fileSize.js";
+import fileType from "./fileType.js";
+import fileTypeCsv from "./fileTypeCsv.js";
+import letter from "./letter.js";
+import number from "./number.js";
+import phone from "./phone.js";
+import regex from "./regex.js";
+import renavam from "./renavam.js";
+import required from "./required.js";
+import age from "./age.js";
+import creditCard from "./creditCard.js";
+import creditCardDate from "./creditCardDate.js";
+import creditCardNumber from "./creditCardNumber.js";
+import creditCardType from "./creditCardType.js";
+import rg from "./rg.js";
+import specialCharacters from "./specialCharacters.js";
 export default {
   carPlate,
   cep,
@@ -48,4 +48,3 @@ export default {
   rg,
   specialCharacters
 };
-//# sourceMappingURL=index.js.map

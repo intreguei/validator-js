@@ -7,4 +7,3 @@ export default ((name, value, regex) => {
   field.valid = re.test(String(value));
   return field;
 });
-//# sourceMappingURL=regex.js.map

@@ -1,10 +1,10 @@
-import utils from "../utils/utils";
-import hasSpecialCharacters from "./specialCharacters";
+import utils from "../utils/utils.js";
+import hasSpecialCharacters from "./specialCharacters.js";
 
 export default (name, value) => {
   let field = {
     name: name,
-    valid: false
+    valid: false,
   };
 
   if (typeof value === "number") value = String(value);

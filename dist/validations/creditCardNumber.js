@@ -1,6 +1,6 @@
-import utils from "../utils/utils";
-import creditCardType from "./creditCardType";
-import isLetter from "./letter";
+import utils from "../utils/utils.js";
+import creditCardType from "./creditCardType.js";
+import isLetter from "./letter.js";
 export default ((name, value) => {
   var field = {
     name: name,
@@ -16,4 +16,3 @@ export default ((name, value) => {
   field.company = creditCardType.get(card)[0] ? creditCardType.get(card)[0].type : "";
   return field;
 });
-//# sourceMappingURL=creditCardNumber.js.map

@@ -132,4 +132,3 @@ export default {
     }
   }
 };
-//# sourceMappingURL=card-types.js.map

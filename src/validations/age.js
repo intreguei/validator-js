@@ -1,4 +1,4 @@
-// import utils from "../utils/utils";
+// import utils from "../utils/utils.js";
 
 export default (name, data) => {
   // const { value, condition, age } = data;

@@ -4,4 +4,3 @@ export default {
   validate: validations,
   mask: masks
 };
-//# sourceMappingURL=index.js.map

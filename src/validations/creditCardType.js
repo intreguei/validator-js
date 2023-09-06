@@ -1,6 +1,6 @@
-import utils from "../utils/utils";
-import matches from "../utils/matches";
-import types from "../utils/card-types";
+import utils from "../utils/utils.js";
+import matches from "../utils/matches.js";
+import types from "../utils/card-types.js";
 
 const cardNames = {
   VISA: "visa",
@@ -14,7 +14,7 @@ const cardNames = {
   ELO: "elo",
   MIR: "mir",
   HIPER: "hiper",
-  HIPERCARD: "hipercard"
+  HIPERCARD: "hipercard",
 };
 
 const ORIGINAL_TEST_ORDER = [
@@ -29,23 +29,22 @@ const ORIGINAL_TEST_ORDER = [
   cardNames.ELO,
   cardNames.MIR,
   cardNames.HIPER,
-  cardNames.HIPERCARD
+  cardNames.HIPERCARD,
 ];
 
 const testOrder = utils.clone(ORIGINAL_TEST_ORDER);
 
-export default{
-
+export default {
   findType(type) {
     return types[type];
   },
 
-  addMatchingCardsToResults(cardNumber, cardConfiguration, results){
+  addMatchingCardsToResults(cardNumber, cardConfiguration, results) {
     let i, pattern, patternLength, clonedCardConfiguration;
 
     for (i = 0; i < cardConfiguration.patterns.length; i++) {
       pattern = cardConfiguration.patterns[i];
-  
+
       if (!matches.matches(cardNumber, pattern)) continue;
 
       clonedCardConfiguration = utils.clone(cardConfiguration);
@@ -61,7 +60,7 @@ export default{
     }
   },
 
-  get(cardNumber){
+  get(cardNumber) {
     let results = [];
 
     testOrder.forEach((type) => {
@@ -70,5 +69,5 @@ export default{
     });
 
     return results;
-  }
+  },
 };

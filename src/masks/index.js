@@ -1,3 +1,3 @@
-import rg from "./rg";
+import rg from "./rg.js";
 
 export default { rg };

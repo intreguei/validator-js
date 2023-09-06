@@ -1,4 +1,4 @@
-import utils from "../utils/utils";
+import utils from "../utils/utils.js";
 export default ((name, value) => {
   var field = {
     name: name,
@@ -15,4 +15,3 @@ export default ((name, value) => {
   field.valid = !!String(value).trim().length;
   return field;
 });
-//# sourceMappingURL=required.js.map

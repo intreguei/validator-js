@@ -7,4 +7,3 @@ export default ((name, value) => {
   field.valid = re.test(value);
   return field;
 });
-//# sourceMappingURL=date.js.map

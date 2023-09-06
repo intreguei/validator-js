@@ -9,9 +9,10 @@ export default (name, value) => {
   if (typeof value === "number") value = String(value);
   if (typeof value !== "string") return field;
 
-  let rg = utils.removeWhiteSpace(value);
+  let cnpj = utils.removeSpecialChars(value);
+  cnpj = utils.removeWhiteSpace(cnpj);
 
-  field.masked = rg.replace(/^(\d{0,2})(\d{0,3})(\d{0,3})([\dX])$/, "$1.$2.$3-$4");
+  field.masked = cnpj.replace(/^(\d{0,2})(\d{0,3})(\d{0,3})(\d{0,4})(\d{0,2})$/, "$1.$2.$3/$4-$5");
 
   return field;
 };

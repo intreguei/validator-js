@@ -38,8 +38,9 @@ jobs:
           prerelease: false
           
   test:
+    needs: build
     runs-on: ubuntu-latest
-    steps: build
+    steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:

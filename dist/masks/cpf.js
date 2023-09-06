@@ -6,7 +6,8 @@ export default ((name, value) => {
   };
   if (typeof value === "number") value = String(value);
   if (typeof value !== "string") return field;
-  var rg = utils.removeWhiteSpace(value);
-  field.masked = rg.replace(/^(\d{0,2})(\d{0,3})(\d{0,3})([\dX])$/, "$1.$2.$3-$4");
+  var cpf = utils.removeSpecialChars(value);
+  cpf = utils.removeWhiteSpace(cpf);
+  field.masked = cpf.replace(/^(\d{0,3})(\d{0,3})(\d{0,3})(\d{0,2})$/, "$1.$2.$3-$4");
   return field;
 });

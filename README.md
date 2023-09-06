@@ -20,19 +20,19 @@ Install via yarn:
 yarn add @intreguei/validator-js
 ```
 
-### How to use
+### How to use Validator
 
 #### Import
 
 ```javascript
-import Validator from "@intreguei/validator-js";
+import v from "@intreguei/validator-js";
 ```
 
 #### Use
 
 ```javascript
 function(inputName, value) {
-  const inputValidation = Validator.email(inputName, value) // returns { name: 'inputName', valid: bool }
+  const inputValidation = v.validate.email(inputName, value) // returns { name: 'inputName', valid: bool }
   if (inputValidation.valid) {
     // do something if your email is correct
   } else {
@@ -41,14 +41,14 @@ function(inputName, value) {
 }
 ```
 
-#### Validator Options
+#### v.validate Options
 
 ##### Mercosul car plate
 
 Ex: AAA-0000 or AAA-0A00
 
 ```javascript
-Validator.carPlate(inputName, value);
+v.validate.carPlate(inputName, value);
 ```
 
 ##### Brazilian CEP
@@ -57,7 +57,7 @@ Ex: 00000-000
 Ex: 00000000
 
 ```javascript
-Validator.cep(inputName, value);
+v.validate.cep(inputName, value);
 ```
 
 ##### Brazilian RG
@@ -65,7 +65,7 @@ Validator.cep(inputName, value);
 Ex: 000000000
 
 ```javascript
-Validator.rg(inputName, value);
+v.validate.rg(inputName, value);
 ```
 
 ##### Brazilian CNH
@@ -73,7 +73,7 @@ Validator.rg(inputName, value);
 Ex: 00000000000
 
 ```javascript
-Validator.cnh(inputName, value);
+v.validate.cnh(inputName, value);
 ```
 
 ##### Brazilian CNPJ
@@ -81,7 +81,7 @@ Validator.cnh(inputName, value);
 Ex: 00.000.000/0000-00
 
 ```javascript
-Validator.cnpj(inputName, value);
+v.validate.cnpj(inputName, value);
 ```
 
 ##### Brazilian CPF
@@ -89,7 +89,7 @@ Validator.cnpj(inputName, value);
 Ex: 000.000.000-00
 
 ```javascript
-Validator.cpf(inputName, value);
+v.validate.cpf(inputName, value);
 ```
 
 ##### Brazilian CPF & CNPJ
@@ -97,7 +97,7 @@ Validator.cpf(inputName, value);
 Ex: 000.000.000-00|0000-00
 
 ```javascript
-Validator.cpfCnpj(inputName, value);
+v.validate.cpfCnpj(inputName, value);
 ```
 
 ##### dd/mm/yyyy Date
@@ -105,7 +105,7 @@ Validator.cpfCnpj(inputName, value);
 Ex: 00/00/0000
 
 ```javascript
-Validator.date(inputName, value);
+v.validate.date(inputName, value);
 ```
 
 ##### Email
@@ -113,7 +113,7 @@ Validator.date(inputName, value);
 Ex: aaaaa@aaa.aaa.aa
 
 ```javascript
-Validator.email(inputName, value);
+v.validate.email(inputName, value);
 ```
 
 ##### File Size
@@ -121,7 +121,7 @@ Validator.email(inputName, value);
 Ex: 1024
 
 ```javascript
-Validator.fileSize(files, size);
+v.validate.fileSize(files, size);
 ```
 
 ##### File Type
@@ -129,7 +129,7 @@ Validator.fileSize(files, size);
 Ex: jpg|svg|jpeg|png|bmp|gi
 
 ```javascript
-Validator.fileType(files);
+v.validate.fileType(files);
 ```
 
 ##### File Type Csv
@@ -137,7 +137,7 @@ Validator.fileType(files);
 Ex: csv
 
 ```javascript
-Validator.fileTypeCsv(files);
+v.validate.fileTypeCsv(files);
 ```
 
 ##### Numbers
@@ -145,7 +145,7 @@ Validator.fileTypeCsv(files);
 Ex: 0123456
 
 ```javascript
-Validator.numbers(inputName, value);
+v.validate.numbers(inputName, value);
 ```
 
 ##### Letters
@@ -153,7 +153,7 @@ Validator.numbers(inputName, value);
 Ex: abcdefgABCDEFG
 
 ```javascript
-Validator.letters(inputName, value);
+v.validate.letters(inputName, value);
 ```
 
 ##### Special Characters
@@ -161,7 +161,7 @@ Validator.letters(inputName, value);
 Ex: @@@@####$$$$
 
 ```javascript
-Validator.specialCharacters(inputName, value);
+v.validate.specialCharacters(inputName, value);
 ```
 
 ##### Brazilian Phone
@@ -169,7 +169,7 @@ Validator.specialCharacters(inputName, value);
 Ex: +55 (11) 0 0000-0000
 
 ```javascript
-Validator.phone(inputName, value);
+v.validate.phone(inputName, value);
 ```
 
 ##### Brazilian Renavam
@@ -177,7 +177,7 @@ Validator.phone(inputName, value);
 Ex: 00000000000
 
 ```javascript
-Validator.renavam(inputName, value);
+v.validate.renavam(inputName, value);
 ```
 
 ##### Brazilian Renavam
@@ -185,7 +185,7 @@ Validator.renavam(inputName, value);
 Ex: 00000000000
 
 ```javascript
-Validator.renavam(inputName, value);
+v.validate.renavam(inputName, value);
 ```
 
 #### Credit Card Number
@@ -193,7 +193,7 @@ Validator.renavam(inputName, value);
 Ex: 0000000000000000
 
 ```javascript
-Validator.creditCardNumber(inputName, value);
+v.validate.creditCardNumber(inputName, value);
 ```
 
 #### Credit Card Date
@@ -201,7 +201,7 @@ Validator.creditCardNumber(inputName, value);
 Ex: 00/00 || 00/0000
 
 ```javascript
-Validator.creditCardDate(inputName, value);
+v.validate.creditCardDate(inputName, value);
 ```
 
 ##### RegEx
@@ -209,5 +209,21 @@ Validator.creditCardDate(inputName, value);
 Ex: `/^[0-9]+$/`
 
 ```javascript
-Validator.regex(inputName, value, regex);
+v.validate.regex(inputName, value, regex);
+```
+
+### How to use Mask
+
+#### Import
+
+```javascript
+import v from "@intreguei/validator-js";
+```
+
+#### Use
+
+```javascript
+function(inputName, value) {
+  return v.mask.email(inputName, value) // returns { name: 'inputName', masked: "value masked" }
+}
 ```

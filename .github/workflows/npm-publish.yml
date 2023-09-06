@@ -39,7 +39,7 @@ jobs:
           
   test:
     runs-on: ubuntu-latest
-    steps:
+    steps: build
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
@@ -48,7 +48,7 @@ jobs:
       - run: yarn test
 
   publish-npm:
-    needs: build
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

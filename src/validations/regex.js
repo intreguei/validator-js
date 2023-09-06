@@ -1,8 +1,8 @@
 export default (name, value, regex) => {
-  var re = new RegExp(regex,"g");
+  var re = new RegExp(regex, "g");
   let field = {
     name: name,
-    valid: false
+    valid: false,
   };
 
   field.valid = re.test(String(value));

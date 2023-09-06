@@ -1,16 +1,16 @@
 {
-    "compilerOptions": {
-      "target": "es2020",
-      "allowSyntheticDefaultImports": true,
-      "paths": {
-        "@root/*": ["."],
-        "~/*": ["./src"],
-        "@domains/*": ["./src/domains"],
-        "@models/*": ["./src/models"],
-        "@app/*": ["./src/app"],
-        "@support/*": ["./src/support"],
-        "@config/*": ["./src/app/config"]
-      }
-    },
-    "exclude": ["node_modules"]
-  }
+  "compilerOptions": {
+    "target": "es2020",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@root/*": ["."],
+      "~/*": ["./src"],
+      "@domains/*": ["./src/domains"],
+      "@models/*": ["./src/models"],
+      "@app/*": ["./src/app"],
+      "@support/*": ["./src/support"],
+      "@config/*": ["./src/app/config"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

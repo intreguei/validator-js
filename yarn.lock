@@ -1367,6 +1367,13 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
+"@this-empathy/locales-patterns@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@this-empathy/locales-patterns/-/locales-patterns-1.0.2.tgz#cee0ac45944d6b5addacf42c4e4584779216f909"
+  integrity sha512-2RkyeG5K/JxrZ/Y1cCAtcNrlJp1Brwu9/nwObTsQyONiKqjyL72Xiwi9ll9qVYiBzg48cFG7rMrVmsj4gPVjVQ==
+  dependencies:
+    np "^6.1.0"
+
 "@types/babel__core@^7.1.14":
   version "7.20.1"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.20.1.tgz#916ecea274b0c776fec721e333e55762d3a9614b"
@@ -2663,6 +2670,11 @@ expect@^29.6.4:
     jest-matcher-utils "^29.6.4"
     jest-message-util "^29.6.3"
     jest-util "^29.6.3"
+
+express-list-routes@^1.1.3:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/express-list-routes/-/express-list-routes-1.1.5.tgz#bcc9878a7e0d34dd61bad7cee2c431568f5a3399"
+  integrity sha512-DUqJE9lxUmRSuw2Od/5C0vhlzvzcHFVo4fXat12fk6agAuxXGgO6cOQeq1/1sFBKzbjgSfMilT2CRJdYpcBh4g==
 
 external-editor@^3.0.3:
   version "3.1.0"
@@ -4567,6 +4579,11 @@ prepend-http@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha512-ravE6m9Atw9Z/jjttRUZ+clIXogdghyZAuWJ3qEzjT+jI/dL1ifAqhZeC5VHzQp1MSt1+jxKkFNemj/iO7tVUA==
+
+prettier@^2.8.7:
+  version "2.8.8"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.8.tgz#e8c5d7e98a4305ffe3de2e1fc4aca1a71c28b1da"
+  integrity sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==
 
 pretty-format@^29.6.3:
   version "29.6.3"
